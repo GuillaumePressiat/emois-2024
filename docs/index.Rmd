@@ -54,6 +54,66 @@ dtttable <- function(x, n = 12) DT::datatable(x, extensions = 'Buttons', options
 
 
 ---
+
+## Initialiser le R projet de l'atelier
+
+#### Dans RStudio > File > New project... (1)
+
+<center>
+<img src="assets/new_project.png" height="300px">
+</center>
+
+---
+
+## Initialiser le R projet de l'atelier
+
+#### Dans RStudio > File > New project... (2)
+
+<center>
+<img src="assets/git.png" height="300px">
+</center>
+
+---
+
+## Initialiser le R projet de l'atelier
+
+#### Dans RStudio > File > New project... (3)
+
+
+<center>
+<img src="assets/git2.png" height="300px">
+</center>
+
+<hr>
+
+<a target="_blank" href="https://github.com/guillaumePressiat/emois-2024-atelier">https://github.com/guillaumePressiat/emois-2024-atelier</a>
+
+---
+
+## Copier les données
+
+<br>
+<br>
+
+####  Dans le répertoire `emois-2024-atelier/data`
+
+#### Placer le fichier `290000017.2023.12.****out.zip`
+
+#### ou les données de votre établissement
+
+---
+
+## Ouvrir un nouveau script
+
+<br>
+<br>
+
+####  File > New File > R Script
+
+####  Enregistrer le script
+
+
+---
 class: inverse, center, middle
 
 
