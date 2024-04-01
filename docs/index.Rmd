@@ -92,14 +92,15 @@ dtttable <- function(x, n = 12) DT::datatable(x, extensions = 'Buttons', options
 
 ## Copier les données
 
-<br>
-<br>
+#### Télécharger les données ici <a target="_blank" href="https://tinyurl.com/emois-r-2024">https://tinyurl.com/emois-r-2024</a> 
 
-####  Dans le répertoire `emois-2024-atelier/data`
+<center>
+<img style="float: top-left" src="assets/bluefiles.png" width="450">
+</center>
 
-#### Placer le fichier `290000017.2023.12.****.out.zip`
+#### Placer le fichier `290000017.2023.12.****.out.zip` dans le répertoire `emois-2024-atelier/data` du projet
 
-#### ou les données de votre établissement
+#### ou, si vous les avez, les données de votre établissement
 
 ---
 
