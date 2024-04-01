@@ -116,7 +116,8 @@ h2 {
 
 .title-slide h2 {
     font-family: Segoe UI,Helvetica, Arial,sans-serif;
-    color: #1E4D99;
+    color: whitesmoke;
+    font-weight:300;
 }
 
 
@@ -133,15 +134,15 @@ h1,legend{
 
 h3{
     font-family: Segoe UI,Helvetica, Arial,sans-serif;
-   /* font-weight:700;*/
-    color: #76C3ED;
+    font-weight:300;
+    color: #425671;
 }
 
 h4{
     font-family: Segoe UI,Helvetica, Arial,sans-serif;
    /* font-weight:700;*/
    font-weight: bold;
-    color: #76C3ED;
+    color: #4d94ff;
 }
 
 
@@ -208,8 +209,10 @@ h1.title{
   margin-top: 0px;
 }
 
-.subtitle{
+subtitle.h2{
     font-size:80%; /* of h1 */
+    font-weight: 800;
+    color: white;
 }
 
 h3{
@@ -800,12 +803,14 @@ footer p{
 
 #postamble .author {
     font-size: 100%;
+    font-weight: 500;
     margin-bottom: 0px;
 }
 
 #postamble .date {
     font-size: 100%;
     margin-bottom: 0px;
+    font-weight: 500;
     color: #f8e5ee;
 }
 
