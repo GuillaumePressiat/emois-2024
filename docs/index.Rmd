@@ -97,7 +97,7 @@ dtttable <- function(x, n = 12) DT::datatable(x, extensions = 'Buttons', options
 
 ####  Dans le répertoire `emois-2024-atelier/data`
 
-#### Placer le fichier `290000017.2023.12.****out.zip`
+#### Placer le fichier `290000017.2023.12.****.out.zip`
 
 #### ou les données de votre établissement
 
