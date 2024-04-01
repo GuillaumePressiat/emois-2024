@@ -343,6 +343,25 @@ class: inverse, center, middle
 
 ---
 
+## Contexte, objectifs
+
+### En peu de mots
+
+#### > pouvoir partager des référentiels et des méthodes pour requêter les données
+
+  - favoriser les échanges entre établissements
+  - ne pas réinventer la roue
+  - gagner du temps
+  - profiter d'un écosystème riche
+
+#### > décorréler le programme qui requête les données de la requête elle-même
+
+  - faire des requêtes des objets versionnables 
+  - les codes CIM, CCAM, GHM ne sont plus émiéttés dans les programmes
+  
+
+---
+
 
 ## Référentiels et libellés
 
