@@ -78,6 +78,8 @@ class: inverse, center, middle
 
   - donne de la confiance dans les résultats
   - permet de mieux comprendre les données et les problèmes
+  - faire vivre la notion de République numérique (ouvrir les savoirs numériques)
+
 
 #### &gt; des chiffres homogènes au niveau EJ permettent 
       
@@ -145,6 +147,8 @@ rsa &lt;- irsa(p, typi = 6)
 
 ### RSA transmis sur la période
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2rtp.html"&gt;Lien vers le tableau [1.D.2.RTP]&lt;/a&gt;
+
 #### Compter le nombre de lignes 
 
 
@@ -162,11 +166,15 @@ rsa$rsa %&gt;%
   summarize(n = n())
 ```
 
+
+
 ---
 
 ## Tableau [1.D.2.RTP] 
 
 #### RSA transmis sur la période
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2rtp.html"&gt;Lien vers le tableau [1.D.2.RTP]&lt;/a&gt;
 
 
 ```r
@@ -186,6 +194,8 @@ rsa$rsa %&gt;%
 ---
 
 ## Tableau [1.D.2.RTP] 
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2rtp.html"&gt;Lien vers le tableau [1.D.2.RTP]&lt;/a&gt;
 
 #### RSA transmis sur la période - Complet
 
@@ -215,6 +225,8 @@ rsa$rsa %&gt;%
 
 ## Tableau [1.D.2.ME/S] 
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2me.html"&gt;Lien vers le tableau [1.D.2.ME]&lt;/a&gt;
+
 ### Répartition des modes d'entrée / sortie
 
 
@@ -236,6 +248,8 @@ rsa$rsa %&gt;%
   mutate(p = n / sum(n)) # MEP + passage par les urgences
 ```
 
+&lt;a class = "fixed2" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2ms.html"&gt;Lien vers le tableau [1.D.2.MS]&lt;/a&gt;
+
 ---
 
 ## Tableau [1.D.2.CMGS] 
@@ -250,6 +264,9 @@ rsa$rsa %&gt;%
             dms = mean(duree[duree &gt; 0]),
             n0 = sum(duree == 0L))
 ```
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2cmgs.html"&gt;Lien vers le tableau [1.D.2.CMGS]&lt;/a&gt;
+&lt;a class = "fixed2" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2cmghs.html"&gt;Lien vers le tableau [1.D.2.CMGHS]&lt;/a&gt;
 
 ---
 
@@ -266,6 +283,8 @@ rsa$rsa_um %&gt;%
   count(typaut = substr(typaut1,1,2), natsupp1, wt = nbsupp1)
 ```
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2sum.html"&gt;Lien vers le tableau [1.D.2.SUM]&lt;/a&gt;
+
 ---
 
 ## Tableau [1.Q.1.EG] 
@@ -281,6 +300,7 @@ group_by(eg, eg) %&gt;%
             `Nb séjours` = n_distinct(cle_rsa))
 ```
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1q1eg.html"&gt;Lien vers le tableau [1.D.2.EG]&lt;/a&gt;
 
 ---
 
@@ -300,6 +320,8 @@ tarifs_supp &lt;- get_table('tarifs_mco_supplements') %&gt;% mutate_if(is.numeri
 vrsa &lt;- vvr_rsa(p)
 vano &lt;- vvr_ano_mco(p)
 ```
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1v1sv.html"&gt;Lien vers le tableau [1.V.1.SV]&lt;/a&gt;
 
 ---
 
@@ -324,6 +346,8 @@ rsa_valo &lt;- vvr_mco(
 epmsi_mco_sv(rsa_valo)
 ```
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1v1sv.html"&gt;Lien vers le tableau [1.V.1.SV]&lt;/a&gt;
+
 ---
 
 ## Tableau [1.V.1.RAV]
@@ -335,6 +359,8 @@ epmsi_mco_sv(rsa_valo)
 epmsi_mco_sv(rsa_valo)
 ```
 
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1v1rav.html"&gt;Lien vers le tableau [1.V.1.RAV]&lt;/a&gt;
+
 ---
 
 ## Tableau [1.D.2.IPA] 
@@ -344,6 +370,9 @@ epmsi_mco_sv(rsa_valo)
 Voir programme annexe `exemple_ipa.R`
 
 et le lien ici : [https://toudim.netlify.app/](https://toudim.netlify.app/)
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1d2ipa.html"&gt;Lien vers le tableau [1.D.2.IPA]&lt;/a&gt;
+
 
 ---
 
@@ -360,6 +389,9 @@ imed_mco(p) %&gt;% filter(indication == 'IGLOUBI')
 ```r
 imed_mco(p) %&gt;% filter(indication == 'IBOULGA')
 ```
+
+&lt;a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1v2vmed.html"&gt;Lien vers le tableau [1.V.2.VMED]&lt;/a&gt;
+
 
 ---
 class: inverse, center, middle
@@ -421,6 +453,7 @@ rsa$rsa %&gt;%
 
 ```r
 library(nomensland)
+
 rsa &lt;- irsa(p, typi = 6) %&gt;% prepare_rsa()
 
 requetes_re &lt;- get_all_listes('Recours Exceptionnel')

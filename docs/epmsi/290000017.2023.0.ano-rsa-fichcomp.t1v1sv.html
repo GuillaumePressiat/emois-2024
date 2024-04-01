@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=iso-8859-15">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.body
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif,'lucida sans unicode';
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.byline
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.data
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.header
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.linecontent
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.proctitle
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.proctitlefixed
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.rowheader
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter10
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter2
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter3
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter4
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter5
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter6
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter7
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter8
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter9
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle10
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle2
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle3
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle4
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle5
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle6
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle7
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle8
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle9
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.table
+{
+  background-color: #FFFFFF;
+  border: 1px solid #3872AC;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.1.SV] A - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Séjours valorisés</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.TOT">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col"> </th>
+<th class="r m header" scope="col">Nb<br/>Séjours/Séances</th>
+<th class="r m header" scope="col">Montant&nbsp;BR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">Séjours transmis</td>
+<td class="r t data">1 000</td>
+<td class="r t data">1 878 869,19</td>
+</tr>
+<tr>
+<td class="l t data">Séjours en CM 90</td>
+<td class="r t data">15</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">Séjours en prestation inter-établissement</td>
+<td class="r t data">3</td>
+<td class="r t data">3 546,76</td>
+</tr>
+<tr>
+<td class="l t data">Séjours en GHS 9999</td>
+<td class="r t data">5</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">Séjours avec pb de chainage (hors NN, rdth et PO)</td>
+<td class="r t data">4</td>
+<td class="r t data">2 609,93</td>
+</tr>
+<tr>
+<td class="l t data">Séjours avec pb de codage des variables bloquantes</td>
+<td class="r t data">4</td>
+<td class="r t data">24 059,17</td>
+</tr>
+<tr>
+<td class="l t data">Séjours en attente de décision sur les droits du patient</td>
+<td class="r t data">0</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">Séjours non facturable à l&#39;AM hors PO</td>
+<td class="r t data">7</td>
+<td class="r t data">11 051,47</td>
+</tr>
+<tr>
+<td class="l t data">Séjours avec PO sur patient arrivé décédé ou avec PO non facturables à l&#39;AM</td>
+<td class="r t data">0</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">Montant lié à la suppression des SI/SC en cas de limitation</td>
+<td class="r t data">0</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">Séjours valorisés</td>
+<td class="r t data">962</td>
+<td class="r t data">1 837 601,87</td>
+</tr>
+<tr>
+<td class="l t data">Dont séjours en attente de taux de prise en charge</td>
+<td class="r t data">0</td>
+<td class="r t data">0,00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&#39;</td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.1.SV] B - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Séjours valorisés par type de séjour</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.TOT">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col"> </th>
+<th class="r m header" scope="col">Nb<br/>Séjours/Séances</th>
+<th class="r m header" scope="col">Montant&nbsp;BR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">Séjours valorisés</td>
+<td class="r t data">962</td>
+<td class="r t data">1 837 601,87</td>
+</tr>
+<tr>
+<td class="l t data">Dont séjours en hospitalisation complète</td>
+<td class="r t data">313</td>
+<td class="r t data">1 422 822,68</td>
+</tr>
+<tr>
+<td class="l t data">Dont séjours sans nuitée</td>
+<td class="r t data">186</td>
+<td class="r t data">186 407,53</td>
+</tr>
+<tr>
+<td class="l t data">Dont séjours séances</td>
+<td class="r t data">463</td>
+<td class="r t data">228 371,66</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&#39;</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>

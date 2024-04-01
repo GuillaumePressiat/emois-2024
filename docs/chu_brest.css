@@ -738,6 +738,29 @@ a:visited{
   background-color: #f2f2f2;
 }
 
+a.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  border: 3px solid #6ea26f;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+  margin: 6px;
+}
+
+a.fixed2 {
+  position: fixed;
+  bottom: 0;
+  left: 320px;
+  width: 300px;
+  border: 3px solid #6ea26f;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+  margin: 6px;
+}
 .left{
     text-align:left}
 

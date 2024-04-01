@@ -1,0 +1,1588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=iso-8859-15">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.body
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif,'lucida sans unicode';
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.byline
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.data
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.header
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.linecontent
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.proctitle
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.proctitlefixed
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.rowheader
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter10
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter2
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter3
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter4
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter5
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter6
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter7
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter8
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter9
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle10
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle2
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle3
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle4
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle5
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle6
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle7
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle8
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle9
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.table
+{
+  background-color: #FFFFFF;
+  border: 1px solid #3872AC;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.2.VMED] A -  Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Molécules onéreuses valorisées</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.TOT">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">Indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="r m header" scope="col">Nb UCD transmis<br/>FICHCOMP</th>
+<th class="r m header" scope="col">Nb UCD non valorisées<br/>(séjours supprimés tab [1.V.1.SV] A <br/>et/ou radiation partielle pour AVASTIN)</th>
+<th class="r m header" scope="col">Nb UCD non valorisés<br/>(UCD administrées hors période)</th>
+<th class="r m header" scope="col">Nb UCD<br/>essais thérapeutiques (*)<br/>ou avec Forfait Innovation</th>
+<th class="r m header" scope="col">Nb avec pb<br/>indication **</th>
+<th class="r m header" scope="col">Nb UCD<br/>valorisées</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890000246</td>
+<td class="l t data">9000024</td>
+<td class="l t data">I999999</td>
+<td class="l t data">ZIRABEV 25MG/ML PERF FL16ML</td>
+<td class="r t data">11.875</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">11,88</td>
+</tr>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">I000573</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="r t data">1.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">1,00</td>
+</tr>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="r t data">17.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">17,00</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">I000162</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="r t data">6.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">6,00</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="r t data">8.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">8,00</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<td class="l t data">3400894000662</td>
+<td class="l t data">9400066</td>
+<td class="l t data">I000204</td>
+<td class="l t data">KADCYLA 160 MG PERF FL</td>
+<td class="r t data">2.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">2,00</td>
+</tr>
+<tr>
+<td class="l t data">3400894000662</td>
+<td class="l t data">9400066</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">KADCYLA 160 MG PERF FL</td>
+<td class="r t data">1.000</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">0,00</td>
+<td class="r t data">1,00</td>
+<td class="r t data">0,00</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">46.875</th>
+<th class="r m header" scope="col">0,00</th>
+<th class="r m header" scope="col">0,00</th>
+<th class="r m header" scope="col">0,00</th>
+<th class="r m header" scope="col">26,00</th>
+<th class="r m header" scope="col">20,88</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">(*) correspond aux UCD dt le mnt FICHCOMP est à 0</td>
+</tr>
+<tr>
+<td class="c systemfooter2">(**) uniquement sur les séjours postérieurs au 01/09/2018</td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.2.VMED] B - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Valorisation des dépenses de molécules onéreuses</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.TOT1">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">Indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="r m header" scope="col">Nb valorisé<br/>2023</th>
+<th class="r m header" scope="col">Dépenses</th>
+<th class="r m header" scope="col">Dépenses au tarif <br/>de responsabilité</th>
+<th class="r m header" scope="col">Dépense T2A<br/>accordée</th>
+<th class="r m header" scope="col">Ecart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890000246</td>
+<td class="l t data">9000024</td>
+<td class="l t data">I999999</td>
+<td class="l t data">ZIRABEV 25MG/ML PERF FL16ML</td>
+<td class="r t data">11,88</td>
+<td class="r t data">1 978,46</td>
+<td class="r t data">4 788,74</td>
+<td class="r t data">3 383,60</td>
+<td class="r t data">1 405,14</td>
+</tr>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">I000573</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 573,63</td>
+<td class="r t data">2 601,83</td>
+<td class="r t data">2 587,73</td>
+<td class="r t data">14,10</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">I000162</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="r t data">6,00</td>
+<td class="r t data">6 754,91</td>
+<td class="r t data">7 111,70</td>
+<td class="r t data">6 933,31</td>
+<td class="r t data">178,40</td>
+</tr>
+<tr>
+<td class="l t data">3400894000662</td>
+<td class="l t data">9400066</td>
+<td class="l t data">I000204</td>
+<td class="l t data">KADCYLA 160 MG PERF FL</td>
+<td class="r t data">2,00</td>
+<td class="r t data">5 633,78</td>
+<td class="r t data">5 639,57</td>
+<td class="r t data">5 636,67</td>
+<td class="r t data">2,89</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">20,88</th>
+<th class="r m header" scope="col">16 940,77</th>
+<th class="r m header" scope="col">20 141,83</th>
+<th class="r m header" scope="col">18 541,30</th>
+<th class="r m header" scope="col">1 600,53</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter"><a href></a>Pour visualiser les données n-1, cliquez <a href=/appli_05.do?action=2&win=1&yearOvalide=2022&periodOvalide=12&processTyp=12&resultCode=115>ici</a></td>
+</tr>
+<tr>
+<td class="c systemfooter2">&nbsp;</td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.2.VMED] E - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Synthèse de valorisation des UCD d&#39;AVASTIN</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.TOT_AVA">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">FICHCOMP<br/>renseigné</th>
+<th class="l m header" scope="col">Valorisation</th>
+<th class="l m header" scope="col">Situation de valorisation</th>
+<th class="r m header" scope="col">Nb séjours<br/>séances</th>
+<th class="r m header" scope="col">Nb séances</th>
+<th class="r m header" scope="col">Nb UCD</th>
+<th class="r m header" scope="col">Montant FICHCOMP</th>
+<th class="r m header" scope="col">Dépenses au tarif <br/>de responsabilité</th>
+<th class="r m header" scope="col">Dépense T2A<br/>accordée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890000246</td>
+<td class="l t data">9000024</td>
+<td class="l t data">ZIRABEV 25MG/ML PERF FL16ML</td>
+<td class="l t data">MED</td>
+<td class="l t data">Valorisé</td>
+<td class="l t data">Pas de condition de non facturation dans les diagnostics</td>
+<td class="r t data">1</td>
+<td class="r t data">1</td>
+<td class="r t data">11,88</td>
+<td class="r t data">1 978,46</td>
+<td class="r t data">4 788,74</td>
+<td class="r t data">3 383,60</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&#39;</td>
+</tr>
+<tr>
+<td class="c systemfooter2">&#39;</td>
+</tr>
+</table><br>
+</div>
+<div class="branch">
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.V.2.VMED] F - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Analyse de la combinaison code UCD / indication </td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div class="c m byline">annee=2023 periode=01</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">2,00</td>
+<td class="r t data">6 213,53</td>
+</tr>
+<tr>
+<td class="l t data">3400894000662</td>
+<td class="l t data">9400066</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">KADCYLA 160 MG PERF FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 816,89</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">3,00</th>
+<th class="r m header" scope="col">9 030,42</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div class="c m byline">annee=2023 periode=02</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">3 106,77</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div class="c m byline">annee=2023 periode=03</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">2,00</td>
+<td class="r t data">6 213,53</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 124,87</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">3,00</th>
+<th class="r m header" scope="col">7 338,40</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX6"></a>
+<div class="c m byline">annee=2023 periode=04</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 585,70</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 124,87</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">2,00</th>
+<th class="r m header" scope="col">3 710,56</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX7"></a>
+<div class="c m byline">annee=2023 periode=05</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 572,22</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 124,88</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">2,00</th>
+<th class="r m header" scope="col">3 697,10</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX8"></a>
+<div class="c m byline">annee=2023 periode=06</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 573,63</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 125,85</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">2,00</th>
+<th class="r m header" scope="col">3 699,48</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX9"></a>
+<div class="c m byline">annee=2023 periode=07</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 573,82</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div class="c m byline">annee=2023 periode=08</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">2,00</td>
+<td class="r t data">5 147,86</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 126,01</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">3,00</th>
+<th class="r m header" scope="col">6 273,86</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div class="c m byline">annee=2023 periode=09</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 573,96</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX12"></a>
+<div class="c m byline">annee=2023 periode=10</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">2,00</td>
+<td class="r t data">5 147,92</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 126,02</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">3,00</th>
+<th class="r m header" scope="col">6 273,94</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX13"></a>
+<div class="c m byline">annee=2023 periode=11</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">2 573,96</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 126,02</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">2,00</th>
+<th class="r m header" scope="col">3 699,98</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX14"></a>
+<div class="c m byline">annee=2023 periode=12</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.RES">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">UCD 13</th>
+<th class="l m header" scope="col">UCD 7</th>
+<th class="l m header" scope="col">indication</th>
+<th class="l m header" scope="col">Libellé</th>
+<th class="l m header" scope="col">Analyse combinaison <br/> UCD/Indication</th>
+<th class="r m header" scope="col">Nombre UCD</th>
+<th class="r m header" scope="col">Montant<br/>FICHCOMP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">3400890010818</td>
+<td class="l t data">9001081</td>
+<td class="l t data">IGLOUBI</td>
+<td class="l t data">PHESGO 600MG/600MG INJ FL10ML</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">2,00</td>
+<td class="r t data">5 147,92</td>
+</tr>
+<tr>
+<td class="l t data">3400894000372</td>
+<td class="l t data">9400037</td>
+<td class="l t data">IBOULGA</td>
+<td class="l t data">HERCEPTIN 600 MG/5 ML INJ FL</td>
+<td class="l t data">Combinaison UCD/indication incohérente</td>
+<td class="r t data">1,00</td>
+<td class="r t data">1 126,02</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">3,00</th>
+<th class="r m header" scope="col">6 273,94</th>
+</tr>
+<tr>
+<th class="l m header" scope="col">annee</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">26,00</th>
+<th class="r m header" scope="col">58 252,21</th>
+</tr>
+<tr>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">26,00</th>
+<th class="r m header" scope="col">58 252,21</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">Ces molécules ne sont pas valorisées pour les séjours débutant après le 1er Mars 2019</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>

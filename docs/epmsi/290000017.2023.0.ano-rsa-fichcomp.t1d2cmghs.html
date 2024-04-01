@@ -1,0 +1,4591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=iso-8859-15">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.body
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif,'lucida sans unicode';
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.byline
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.data
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.header
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headeremphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.headerstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.linecontent
+{
+  background-color: #FFFFFF;
+  color: #666699;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 1px;
+  vertical-align: top;
+}
+.proctitle
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.proctitlefixed
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+.rowheader
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasis
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderempty
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrong
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.rowheaderstrongfixed
+{
+  background-color: #B9C9FE;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.systemfooter
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter10
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter2
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter3
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter4
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter5
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter6
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter7
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter8
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemfooter9
+{
+  background-color: transparent;
+  color: #666699;
+  font-family: 'lucida sans unicode','trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle10
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle2
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle3
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle4
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle5
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle6
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle7
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle8
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.systemtitle9
+{
+  background-color: transparent;
+  color: #003399;
+  font-family: '"lucida sans unicode"','"lucida grande"',sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+}
+.table
+{
+  background-color: #FFFFFF;
+  border: 1px solid #3872AC;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: 'trebuchet ms',helvetica,arial,sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0px;
+  vertical-align: middle;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Tableau [1.D.2.CMGHS] - Date du traitement: 01/04/2024 10:58:37</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Casemix GHM - hors séances</td>
+</tr>
+<tr>
+<td class="c systemtitle3">C.H.U.  BREST (Finess=290000017)</td>
+</tr>
+<tr>
+<td class="c systemtitle4">2023 M0 : brouillon (période de test)</td>
+</tr>
+</table><br>
+<div class="c m byline">periode=Avant mars</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.CASEMIXT">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">GHM</th>
+<th class="r m header" scope="col">Effectif RSA<br/>Etablissement</th>
+<th class="r m header" scope="col">%<br/>Hôpital</th>
+<th class="r m header" scope="col"> Nb<br/>journées<br/>Etablissement</th>
+<th class="r m header" scope="col">DMS<br/>Etablissement</th>
+<th class="r m header" scope="col">DMS<br/>Base </th>
+<th class="r m header" scope="col">Age<br/>moyen<br/>Etablissement</th>
+<th class="r m header" scope="col">Age<br/>moyen<br/>BNat</th>
+<th class="r m header" scope="col">%<br/>Décès<br/>Etablissement</th>
+<th class="r m header" scope="col">%<br/>Décès<br/>BNat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">01K04J Injections de toxine botulique, en ambulato</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">47,0</td>
+<td class="r t data">56,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M201 Commotions cérébrales, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">0,8</td>
+<td class="r t data">45,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">02M08T Autres affections oculaires d&#39;origine non d</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">38,0</td>
+<td class="r t data">55,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03C252 Interventions majeures sur la tête et le co</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">14,5</td>
+<td class="r t data">74,0</td>
+<td class="r t data">63,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">04K02J Séjours comprenant une endoscopie bronchiqu</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">76,0</td>
+<td class="r t data">59,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">04M052 Pneumonies et pleurésies banales, âge supér</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">7,3</td>
+<td class="r t data">68,0</td>
+<td class="r t data">72,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,4</td>
+</tr>
+<tr>
+<td class="l t data">04M132 Oedème pulmonaire et détresse respiratoire,</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">7,0</td>
+<td class="r t data">1,0</td>
+<td class="r t data">52,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">12,5</td>
+</tr>
+<tr>
+<td class="l t data">04M202 Bronchopneumopathies chroniques surinfectée</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">7,3</td>
+<td class="r t data">61,0</td>
+<td class="r t data">71,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,1</td>
+</tr>
+<tr>
+<td class="l t data">05C034 Chirurgie de remplacement valvulaire avec c</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">25,7</td>
+<td class="r t data">68,0</td>
+<td class="r t data">63,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">13,6</td>
+</tr>
+<tr>
+<td class="l t data">05K062 Endoprothèses vasculaires sans infarctus du</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">5,8</td>
+<td class="r t data">96,0</td>
+<td class="r t data">72,2</td>
+<td class="r t data">100,0</td>
+<td class="r t data">0,7</td>
+</tr>
+<tr>
+<td class="l t data">05M041 Infarctus aigu du myocarde, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">3,2</td>
+<td class="r t data">42,0</td>
+<td class="r t data">66,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,0</td>
+</tr>
+<tr>
+<td class="l t data">05M093 Insuffisances cardiaques et états de choc c</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">12,1</td>
+<td class="r t data">88,0</td>
+<td class="r t data">82,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">10,8</td>
+</tr>
+<tr>
+<td class="l t data">05M17T Autres affections de l&#39;appareil circulatoir</td>
+<td class="r t data">2</td>
+<td class="r t data">6,7</td>
+<td class="r t data">1</td>
+<td class="r t data">0,5</td>
+<td class="r t data">0,2</td>
+<td class="r t data">65,5</td>
+<td class="r t data">54,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06C14J Interventions sur le rectum et l&#39;anus autre</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">28,0</td>
+<td class="r t data">43,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M021 Autres gastroentérites et maladies diverses</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,4</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M063 Occlusions intestinales non dues à une hern</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">11,2</td>
+<td class="r t data">48,0</td>
+<td class="r t data">75,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">7,7</td>
+</tr>
+<tr>
+<td class="l t data">08M143 Affections du tissu conjonctif, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">22</td>
+<td class="r t data">22,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">40,0</td>
+<td class="r t data">71,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,7</td>
+</tr>
+<tr>
+<td class="l t data">09C201 Autres interventions pour tumeur maligne du</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">61,0</td>
+<td class="r t data">64,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C20J Autres interventions pour tumeur maligne du</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">55,0</td>
+<td class="r t data">59,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M13T Explorations et surveillance pour affection</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">52,0</td>
+<td class="r t data">44,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">11M111 Signes et symptômes concernant les reins et</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,2</td>
+<td class="r t data">17,0</td>
+<td class="r t data">7,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14C04T Affections du post-partum ou du post abortu</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+<td class="r t data">32,0</td>
+<td class="r t data">31,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z13A Accouchements uniques par voie basse chez u</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">4,3</td>
+<td class="r t data">27,0</td>
+<td class="r t data">28,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">16M11T Autres troubles de la lignée érythrocytaire</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+<td class="r t data">82,0</td>
+<td class="r t data">67,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">17M06T Chimiothérapie pour autre tumeur, très cour</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,4</td>
+<td class="r t data">82,0</td>
+<td class="r t data">62,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">19M103 Névroses autres que les névroses dépressive</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">23</td>
+<td class="r t data">23,0</td>
+<td class="r t data">12,5</td>
+<td class="r t data">90,0</td>
+<td class="r t data">82,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">20Z051 Ethylisme aigu, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">55,0</td>
+<td class="r t data">45,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23M20T Autres symptômes et motifs de recours aux s</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+<td class="r t data">21,0</td>
+<td class="r t data">54,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">23M21T Désensibilisations et tests allergologiques</td>
+<td class="r t data">1</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">55,0</td>
+<td class="r t data">37,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="r m header" scope="col">30</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">129</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div class="c m byline">periode=Après mars</div>
+<p/><div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="8" border="1" bordercolor="#3872AC" summary="Procedure Print: Table WORK.CASEMIXT">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m header" scope="col">GHM</th>
+<th class="r m header" scope="col">Effectif RSA<br/>Etablissement</th>
+<th class="r m header" scope="col">%<br/>Hôpital</th>
+<th class="r m header" scope="col"> Nb<br/>journées<br/>Etablissement</th>
+<th class="r m header" scope="col">DMS<br/>Etablissement</th>
+<th class="r m header" scope="col">DMS<br/>Base </th>
+<th class="r m header" scope="col">Age<br/>moyen<br/>Etablissement</th>
+<th class="r m header" scope="col">Age<br/>moyen<br/>BNat</th>
+<th class="r m header" scope="col">%<br/>Décès<br/>Etablissement</th>
+<th class="r m header" scope="col">%<br/>Décès<br/>BNat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l t data">01C032 Craniotomies pour traumatisme, âge supérieu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">7,1</td>
+<td class="r t data">71,0</td>
+<td class="r t data">67,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,8</td>
+</tr>
+<tr>
+<td class="l t data">01C042 Craniotomies en dehors de tout traumatisme,</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">17</td>
+<td class="r t data">8,5</td>
+<td class="r t data">7,7</td>
+<td class="r t data">69,0</td>
+<td class="r t data">58,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,3</td>
+</tr>
+<tr>
+<td class="l t data">01C043 Craniotomies en dehors de tout traumatisme,</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">15</td>
+<td class="r t data">15,0</td>
+<td class="r t data">14,2</td>
+<td class="r t data">67,0</td>
+<td class="r t data">61,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,3</td>
+</tr>
+<tr>
+<td class="l t data">01C062 Interventions sur le système vasculaire pré</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">6,3</td>
+<td class="r t data">65,0</td>
+<td class="r t data">72,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">01K021 Autres embolisations intracrâniennes et méd</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">46,0</td>
+<td class="r t data">53,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">01K022 Autres embolisations intracrâniennes et méd</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">4,5</td>
+<td class="r t data">45,0</td>
+<td class="r t data">54,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">01K031 Autres actes thérapeutiques par voie vascul</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">1,8</td>
+<td class="r t data">85,0</td>
+<td class="r t data">69,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,4</td>
+</tr>
+<tr>
+<td class="l t data">01K032 Autres actes thérapeutiques par voie vascul</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">15</td>
+<td class="r t data">15,0</td>
+<td class="r t data">7,5</td>
+<td class="r t data">69,0</td>
+<td class="r t data">69,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">9,0</td>
+</tr>
+<tr>
+<td class="l t data">01K04J Injections de toxine botulique, en ambulato</td>
+<td class="r t data">6</td>
+<td class="r t data">1,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">57,7</td>
+<td class="r t data">56,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M051 Infections du système nerveux à l&#39;exception</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">3,1</td>
+<td class="r t data">65,0</td>
+<td class="r t data">36,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">01M082 Maladies dégénératives du système nerveux,</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">8,3</td>
+<td class="r t data">58,0</td>
+<td class="r t data">61,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,1</td>
+</tr>
+<tr>
+<td class="l t data">01M112 Affections des nerfs crâniens et rachidiens</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">14</td>
+<td class="r t data">14,0</td>
+<td class="r t data">6,8</td>
+<td class="r t data">44,0</td>
+<td class="r t data">62,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">01M11T Affections des nerfs crâniens et rachidiens</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,3</td>
+<td class="r t data">70,0</td>
+<td class="r t data">57,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M121 Autres affections du système nerveux, nivea</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">45,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">01M12T Autres affections du système nerveux, très</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">1</td>
+<td class="r t data">0,3</td>
+<td class="r t data">0,3</td>
+<td class="r t data">38,0</td>
+<td class="r t data">45,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M16T Accidents ischémiques transitoires et occlu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">0,9</td>
+<td class="r t data">55,0</td>
+<td class="r t data">62,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M191 Autres lésions traumatiques intracrâniennes</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">15,0</td>
+<td class="r t data">56,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,3</td>
+</tr>
+<tr>
+<td class="l t data">01M192 Autres lésions traumatiques intracrâniennes</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">7,5</td>
+<td class="r t data">79,0</td>
+<td class="r t data">71,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">7,4</td>
+</tr>
+<tr>
+<td class="l t data">01M201 Commotions cérébrales, niveau 1</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">2</td>
+<td class="r t data">0,7</td>
+<td class="r t data">0,6</td>
+<td class="r t data">61,3</td>
+<td class="r t data">49,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">01M21T Douleurs chroniques rebelles, très courte d</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">55,0</td>
+<td class="r t data">55,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M241 Epilepsie, âge inférieur à 18 ans, niveau 1</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">8</td>
+<td class="r t data">2,7</td>
+<td class="r t data">2,5</td>
+<td class="r t data">8,0</td>
+<td class="r t data">6,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">01M252 Epilepsie, âge supérieur à 17 ans, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">6,5</td>
+<td class="r t data">84,0</td>
+<td class="r t data">65,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">01M262 Tumeurs malignes du système nerveux, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">7,9</td>
+<td class="r t data">54,0</td>
+<td class="r t data">62,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,0</td>
+</tr>
+<tr>
+<td class="l t data">01M291 Anévrysmes cérébraux, niveau 1</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+<td class="r t data">68,0</td>
+<td class="r t data">56,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">01M301 Accidents vasculaires intracérébraux non tr</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">7</td>
+<td class="r t data">3,5</td>
+<td class="r t data">5,1</td>
+<td class="r t data">87,0</td>
+<td class="r t data">68,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,8</td>
+</tr>
+<tr>
+<td class="l t data">01M302 Accidents vasculaires intracérébraux non tr</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">48</td>
+<td class="r t data">12,0</td>
+<td class="r t data">8,7</td>
+<td class="r t data">75,3</td>
+<td class="r t data">72,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">5,9</td>
+</tr>
+<tr>
+<td class="l t data">01M303 Accidents vasculaires intracérébraux non tr</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">79</td>
+<td class="r t data">19,8</td>
+<td class="r t data">14,3</td>
+<td class="r t data">66,3</td>
+<td class="r t data">75,9</td>
+<td class="r t data">25,0</td>
+<td class="r t data">11,2</td>
+</tr>
+<tr>
+<td class="l t data">01M304 Accidents vasculaires intracérébraux non tr</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">23,4</td>
+<td class="r t data">78,0</td>
+<td class="r t data">77,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">30,0</td>
+</tr>
+<tr>
+<td class="l t data">01M312 Autres accidents vasculaires cérébraux non</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">21</td>
+<td class="r t data">21,0</td>
+<td class="r t data">8,9</td>
+<td class="r t data">39,0</td>
+<td class="r t data">72,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">13,0</td>
+</tr>
+<tr>
+<td class="l t data">01M32Z Explorations et surveillance pour affection</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">56,8</td>
+<td class="r t data">48,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">01M34Z Anomalies de la démarche d&#39;origine neurolog</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">6</td>
+<td class="r t data">3,0</td>
+<td class="r t data">9,9</td>
+<td class="r t data">68,0</td>
+<td class="r t data">79,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">02C021 Interventions sur la rétine, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,3</td>
+<td class="r t data">80,0</td>
+<td class="r t data">62,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C023 Interventions sur la rétine, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">15,4</td>
+<td class="r t data">73,0</td>
+<td class="r t data">63,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C031 Interventions sur l&#39;orbite, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,8</td>
+<td class="r t data">46,0</td>
+<td class="r t data">47,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C051 Interventions sur le cristallin avec ou san</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">3</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,2</td>
+<td class="r t data">76,3</td>
+<td class="r t data">72,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C05J Interventions sur le cristallin avec ou san</td>
+<td class="r t data">8</td>
+<td class="r t data">1,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">69,8</td>
+<td class="r t data">73,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C08J Autres interventions extraoculaires, âge su</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">76,0</td>
+<td class="r t data">63,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02C091 Allogreffes de cornée, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">2,0</td>
+<td class="r t data">73,0</td>
+<td class="r t data">65,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02M041 Affections oculaires d&#39;origine neurologique</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">2,7</td>
+<td class="r t data">73,0</td>
+<td class="r t data">54,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02M04T Affections oculaires d&#39;origine neurologique</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">29,0</td>
+<td class="r t data">47,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02M05T Autres affections oculaires, âge inférieur</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,0</td>
+<td class="r t data">5,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">02M09Z Explorations et surveillance pour affection</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">42,7</td>
+<td class="r t data">44,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03C201 Interventions de reconstruction de l&#39;oreill</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,3</td>
+<td class="r t data">43,0</td>
+<td class="r t data">40,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03C21J Interventions pour oreilles décollées, en a</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">15,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03C261 Autres interventions sur la tête et le cou,</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,3</td>
+<td class="r t data">58,0</td>
+<td class="r t data">59,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">03K02J Affections de la bouche et des dents avec c</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">22,0</td>
+<td class="r t data">24,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03K03J Séjours comprenant une endoscopie oto-rhino</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">60,0</td>
+<td class="r t data">58,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03M032 Otites moyennes et autres infections des vo</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">3,8</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03M03T Otites moyennes et autres infections des vo</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">11,0</td>
+<td class="r t data">2,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03M053 Troubles de l&#39;équilibre, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">9,0</td>
+<td class="r t data">81,0</td>
+<td class="r t data">80,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">03M09T Autres diagnostics portant sur les oreilles</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+<td class="r t data">61,3</td>
+<td class="r t data">55,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">03M10T Affections de la bouche et des dents sans c</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">7,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">03M111 Affections de la bouche et des dents sans c</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,4</td>
+<td class="r t data">75,0</td>
+<td class="r t data">53,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">03M131 Infections aigües sévères des voies aérienn</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">25,0</td>
+<td class="r t data">37,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">04K02J Séjours comprenant une endoscopie bronchiqu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">65,0</td>
+<td class="r t data">60,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">04M021 Bronchites et asthme, âge inférieur à 18 an</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,6</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M022 Bronchites et asthme, âge inférieur à 18 an</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">4,2</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M041 Pneumonies et pleurésies banales, âge infér</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">1,6</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M053 Pneumonies et pleurésies banales, âge supér</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">16</td>
+<td class="r t data">8,0</td>
+<td class="r t data">11,6</td>
+<td class="r t data">83,0</td>
+<td class="r t data">78,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">9,7</td>
+</tr>
+<tr>
+<td class="l t data">04M071 Infections et inflammations respiratoires,</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,4</td>
+<td class="r t data">54,0</td>
+<td class="r t data">72,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">18,4</td>
+</tr>
+<tr>
+<td class="l t data">04M09T Tumeurs de l&#39;appareil respiratoire, très co</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,5</td>
+<td class="r t data">76,0</td>
+<td class="r t data">67,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M111 Signes et symptômes respiratoires, niveau 1</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">26</td>
+<td class="r t data">13,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">63,0</td>
+<td class="r t data">58,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">04M114 Signes et symptômes respiratoires, niveau 4</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">34</td>
+<td class="r t data">34,0</td>
+<td class="r t data">13,5</td>
+<td class="r t data">75,0</td>
+<td class="r t data">64,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,8</td>
+</tr>
+<tr>
+<td class="l t data">04M133 Oedème pulmonaire et détresse respiratoire,</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">32</td>
+<td class="r t data">16,0</td>
+<td class="r t data">12,5</td>
+<td class="r t data">45,5</td>
+<td class="r t data">71,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">19,0</td>
+</tr>
+<tr>
+<td class="l t data">04M143 Maladies pulmonaires interstitielles, nivea</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">14</td>
+<td class="r t data">14,0</td>
+<td class="r t data">12,9</td>
+<td class="r t data">68,0</td>
+<td class="r t data">75,2</td>
+<td class="r t data">100,0</td>
+<td class="r t data">12,9</td>
+</tr>
+<tr>
+<td class="l t data">04M152 Autres diagnostics portant sur le système r</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">16</td>
+<td class="r t data">8,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">40,5</td>
+<td class="r t data">53,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,4</td>
+</tr>
+<tr>
+<td class="l t data">04M163 Traumatismes thoraciques, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">11,1</td>
+<td class="r t data">94,0</td>
+<td class="r t data">79,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,2</td>
+</tr>
+<tr>
+<td class="l t data">04M16T Traumatismes thoraciques, très courte durée</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,8</td>
+<td class="r t data">91,0</td>
+<td class="r t data">60,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">04M18T Bronchiolites, très courte durée</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">1,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M202 Bronchopneumopathies chroniques surinfectée</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">18</td>
+<td class="r t data">4,5</td>
+<td class="r t data">7,3</td>
+<td class="r t data">67,5</td>
+<td class="r t data">71,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,3</td>
+</tr>
+<tr>
+<td class="l t data">04M204 Bronchopneumopathies chroniques surinfectée</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">22</td>
+<td class="r t data">11,0</td>
+<td class="r t data">17,4</td>
+<td class="r t data">73,5</td>
+<td class="r t data">73,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">14,0</td>
+</tr>
+<tr>
+<td class="l t data">04M22Z Explorations et surveillance pour affection</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+<td class="r t data">68,0</td>
+<td class="r t data">45,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M23T Autres symptômes et recours aux soins de la</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">78,0</td>
+<td class="r t data">63,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">04M23Z Autres symptômes et recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">3,9</td>
+<td class="r t data">87,0</td>
+<td class="r t data">62,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,8</td>
+</tr>
+<tr>
+<td class="l t data">05C032 Chirurgie de remplacement valvulaire avec c</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">18</td>
+<td class="r t data">18,0</td>
+<td class="r t data">10,9</td>
+<td class="r t data">49,0</td>
+<td class="r t data">64,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">05C051 Pontages aortocoronariens sans cathétérisme</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">8,4</td>
+<td class="r t data">66,0</td>
+<td class="r t data">64,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,5</td>
+</tr>
+<tr>
+<td class="l t data">05C053 Pontages aortocoronariens sans cathétérisme</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">11,9</td>
+<td class="r t data">76,0</td>
+<td class="r t data">66,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">05C082 Autres interventions cardiothoraciques, âge</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">7,6</td>
+<td class="r t data">54,0</td>
+<td class="r t data">62,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">7,1</td>
+</tr>
+<tr>
+<td class="l t data">05C111 Autres interventions de chirurgie vasculair</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">4,2</td>
+<td class="r t data">70,0</td>
+<td class="r t data">64,7</td>
+<td class="r t data">100,0</td>
+<td class="r t data">3,4</td>
+</tr>
+<tr>
+<td class="l t data">05C133 Amputations pour troubles circulatoires por</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">10,9</td>
+<td class="r t data">88,0</td>
+<td class="r t data">73,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,0</td>
+</tr>
+<tr>
+<td class="l t data">05C141 Poses d&#39;un stimulateur cardiaque permanent</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,3</td>
+<td class="r t data">75,0</td>
+<td class="r t data">79,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">05C18J Autres interventions sur le système circula</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">62,0</td>
+<td class="r t data">64,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,1</td>
+</tr>
+<tr>
+<td class="l t data">05C211 Créations et réfections de fistules artério</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">69,0</td>
+<td class="r t data">63,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">05C221 Remplacements de stimulateurs cardiaques pe</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">4</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">87,0</td>
+<td class="r t data">80,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">05K051 Endoprothèses vasculaires avec infarctus du</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">10</td>
+<td class="r t data">5,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">80,0</td>
+<td class="r t data">63,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,8</td>
+</tr>
+<tr>
+<td class="l t data">05K061 Endoprothèses vasculaires sans infarctus du</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">60,0</td>
+<td class="r t data">69,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">05K063 Endoprothèses vasculaires sans infarctus du</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">11,9</td>
+<td class="r t data">57,0</td>
+<td class="r t data">74,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,4</td>
+</tr>
+<tr>
+<td class="l t data">05K101 Actes diagnostiques par voie vasculaire, ni</td>
+<td class="r t data">6</td>
+<td class="r t data">1,2</td>
+<td class="r t data">13</td>
+<td class="r t data">2,2</td>
+<td class="r t data">1,7</td>
+<td class="r t data">72,5</td>
+<td class="r t data">66,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">05K10J Actes diagnostiques par voie vasculaire, en</td>
+<td class="r t data">8</td>
+<td class="r t data">1,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">70,1</td>
+<td class="r t data">66,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">05K14Z Mise en place de certains accès vasculaires</td>
+<td class="r t data">6</td>
+<td class="r t data">1,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">58,3</td>
+<td class="r t data">63,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">05K17J Affections cardiovasculaires sans acte opér</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">39,5</td>
+<td class="r t data">63,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">05K191 Traitements majeurs de troubles du rythme p</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,0</td>
+<td class="r t data">68,0</td>
+<td class="r t data">63,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">05K212 Poses de bioprothèses de valves cardiaques</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,8</td>
+<td class="r t data">81,0</td>
+<td class="r t data">81,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">05K213 Poses de bioprothèses de valves cardiaques</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">10</td>
+<td class="r t data">10,0</td>
+<td class="r t data">11,4</td>
+<td class="r t data">90,0</td>
+<td class="r t data">82,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,8</td>
+</tr>
+<tr>
+<td class="l t data">05K223 Actes thérapeutiques par voie vasculaire su</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">12,6</td>
+<td class="r t data">85,0</td>
+<td class="r t data">79,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">8,5</td>
+</tr>
+<tr>
+<td class="l t data">05K251 Actes thérapeutiques sur les artères par vo</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,8</td>
+<td class="r t data">74,0</td>
+<td class="r t data">67,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,8</td>
+</tr>
+<tr>
+<td class="l t data">05M042 Infarctus aigu du myocarde, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">6,4</td>
+<td class="r t data">98,0</td>
+<td class="r t data">72,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,8</td>
+</tr>
+<tr>
+<td class="l t data">05M052 Syncopes et lipothymies, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,5</td>
+<td class="r t data">83,0</td>
+<td class="r t data">71,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">05M05T Syncopes et lipothymies, très courte durée</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">1</td>
+<td class="r t data">0,5</td>
+<td class="r t data">0,6</td>
+<td class="r t data">74,0</td>
+<td class="r t data">59,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">05M083 Arythmies et troubles de la conduction card</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">8,6</td>
+<td class="r t data">90,0</td>
+<td class="r t data">81,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,5</td>
+</tr>
+<tr>
+<td class="l t data">05M08T Arythmies et troubles de la conduction card</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,5</td>
+<td class="r t data">56,0</td>
+<td class="r t data">65,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">05M093 Insuffisances cardiaques et états de choc c</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">48</td>
+<td class="r t data">16,0</td>
+<td class="r t data">12,3</td>
+<td class="r t data">87,7</td>
+<td class="r t data">82,4</td>
+<td class="r t data">33,3</td>
+<td class="r t data">11,6</td>
+</tr>
+<tr>
+<td class="l t data">05M09T Insuffisances cardiaques et états de choc c</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">2</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,9</td>
+<td class="r t data">90,5</td>
+<td class="r t data">78,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">5,5</td>
+</tr>
+<tr>
+<td class="l t data">05M122 Troubles vasculaires périphériques, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">6,6</td>
+<td class="r t data">92,0</td>
+<td class="r t data">67,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,8</td>
+</tr>
+<tr>
+<td class="l t data">05M162 Athérosclérose coronarienne, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">5,4</td>
+<td class="r t data">64,0</td>
+<td class="r t data">71,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,3</td>
+</tr>
+<tr>
+<td class="l t data">05M17T Autres affections de l&#39;appareil circulatoir</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+<td class="r t data">76,0</td>
+<td class="r t data">54,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">05M20Z Explorations et surveillance pour affection</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">66,0</td>
+<td class="r t data">57,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06C041 Interventions majeures sur l&#39;intestin grêle</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">4,9</td>
+<td class="r t data">74,0</td>
+<td class="r t data">57,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,2</td>
+</tr>
+<tr>
+<td class="l t data">06C071 Interventions mineures sur l&#39;intestin grêle</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,7</td>
+<td class="r t data">67,0</td>
+<td class="r t data">56,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">06C073 Interventions mineures sur l&#39;intestin grêle</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">40</td>
+<td class="r t data">20,0</td>
+<td class="r t data">12,2</td>
+<td class="r t data">74,0</td>
+<td class="r t data">62,6</td>
+<td class="r t data">50,0</td>
+<td class="r t data">2,3</td>
+</tr>
+<tr>
+<td class="l t data">06C081 Appendicectomies compliquées, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">14,0</td>
+<td class="r t data">30,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">06C091 Appendicectomies non compliquées, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,8</td>
+<td class="r t data">43,0</td>
+<td class="r t data">26,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06C141 Interventions sur le rectum et l&#39;anus autre</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,5</td>
+<td class="r t data">71,0</td>
+<td class="r t data">43,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06C14J Interventions sur le rectum et l&#39;anus autre</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">63,0</td>
+<td class="r t data">44,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06K02Z Endoscopies digestives thérapeutiques et an</td>
+<td class="r t data">8</td>
+<td class="r t data">1,6</td>
+<td class="r t data">1</td>
+<td class="r t data">0,1</td>
+<td class="r t data">0,1</td>
+<td class="r t data">65,8</td>
+<td class="r t data">63,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06K04J Endoscopie digestive diagnostique et anesth</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">59,0</td>
+<td class="r t data">56,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M021 Autres gastroentérites et maladies diverses</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">6</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">1,3</td>
+<td class="r t data">2,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M022 Autres gastroentérites et maladies diverses</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">4,1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M02T Autres gastroentérites et maladies diverses</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">4,0</td>
+<td class="r t data">3,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">06M032 Autres gastroentérites et maladies diverses</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">6,3</td>
+<td class="r t data">56,0</td>
+<td class="r t data">67,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">06M03T Autres gastroentérites et maladies diverses</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">69,0</td>
+<td class="r t data">57,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">06M043 Hémorragies digestives, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">24</td>
+<td class="r t data">24,0</td>
+<td class="r t data">11,4</td>
+<td class="r t data">58,0</td>
+<td class="r t data">75,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">7,9</td>
+</tr>
+<tr>
+<td class="l t data">06M052 Autres tumeurs malignes du tube digestif, n</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">7,2</td>
+<td class="r t data">83,0</td>
+<td class="r t data">73,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">8,0</td>
+</tr>
+<tr>
+<td class="l t data">06M061 Occlusions intestinales non dues à une hern</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">3,1</td>
+<td class="r t data">76,0</td>
+<td class="r t data">62,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,6</td>
+</tr>
+<tr>
+<td class="l t data">06M06T Occlusions intestinales non dues à une hern</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">92,0</td>
+<td class="r t data">67,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">8,1</td>
+</tr>
+<tr>
+<td class="l t data">06M133 Tumeurs malignes de l&#39;oesophage et de l&#39;est</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">31</td>
+<td class="r t data">31,0</td>
+<td class="r t data">14,5</td>
+<td class="r t data">56,0</td>
+<td class="r t data">71,4</td>
+<td class="r t data">100,0</td>
+<td class="r t data">24,7</td>
+</tr>
+<tr>
+<td class="l t data">06M18Z Symptômes et autres recours aux soins de la</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">4</td>
+<td class="r t data">2,0</td>
+<td class="r t data">4,6</td>
+<td class="r t data">35,1</td>
+<td class="r t data">52,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">06M191 Affections sévères du tube digestif, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">61,0</td>
+<td class="r t data">55,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">07C092 Interventions sur le foie, le pancréas et l</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">9,2</td>
+<td class="r t data">62,0</td>
+<td class="r t data">64,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">07K04J Endoscopie biliaire diagnostique et anesthé</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">56,0</td>
+<td class="r t data">60,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">07M021 Affections des voies biliaires, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,4</td>
+<td class="r t data">83,0</td>
+<td class="r t data">63,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">07M022 Affections des voies biliaires, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">10</td>
+<td class="r t data">10,0</td>
+<td class="r t data">6,6</td>
+<td class="r t data">83,0</td>
+<td class="r t data">70,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,0</td>
+</tr>
+<tr>
+<td class="l t data">07M02T Affections des voies biliaires, très courte</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">62,0</td>
+<td class="r t data">59,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,3</td>
+</tr>
+<tr>
+<td class="l t data">07M063 Affections malignes du système hépato-bilia</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">13,8</td>
+<td class="r t data">77,0</td>
+<td class="r t data">72,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">31,0</td>
+</tr>
+<tr>
+<td class="l t data">07M064 Affections malignes du système hépato-bilia</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">21,0</td>
+<td class="r t data">91,0</td>
+<td class="r t data">72,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">51,1</td>
+</tr>
+<tr>
+<td class="l t data">07M073 Cirrhoses alcooliques, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">14,5</td>
+<td class="r t data">50,0</td>
+<td class="r t data">60,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">14,1</td>
+</tr>
+<tr>
+<td class="l t data">07M14T Symptômes et autres recours aux soins de la</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">71,0</td>
+<td class="r t data">65,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C141 Résections osseuses localisées et/ou ablati</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">5</td>
+<td class="r t data">1,7</td>
+<td class="r t data">1,6</td>
+<td class="r t data">44,3</td>
+<td class="r t data">47,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C14J Résections osseuses localisées et/ou ablati</td>
+<td class="r t data">6</td>
+<td class="r t data">1,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">32,5</td>
+<td class="r t data">38,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C20J Greffes de peau pour maladie de l&#39;appareil</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,0</td>
+<td class="r t data">38,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C211 Autres interventions portant sur l&#39;appareil</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,9</td>
+<td class="r t data">44,0</td>
+<td class="r t data">38,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">08C221 Interventions pour reprise de prothèses art</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,3</td>
+<td class="r t data">76,0</td>
+<td class="r t data">65,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">08C222 Interventions pour reprise de prothèses art</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">9,0</td>
+<td class="r t data">87,0</td>
+<td class="r t data">76,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,7</td>
+</tr>
+<tr>
+<td class="l t data">08C242 Prothèses de genou, niveau 2</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">20</td>
+<td class="r t data">10,0</td>
+<td class="r t data">6,2</td>
+<td class="r t data">71,5</td>
+<td class="r t data">74,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C271 Autres interventions sur le rachis, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2,6</td>
+<td class="r t data">56,0</td>
+<td class="r t data">50,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C272 Autres interventions sur le rachis, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,3</td>
+<td class="r t data">78,0</td>
+<td class="r t data">63,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C321 Interventions sur la jambe, âge supérieur à</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">2,9</td>
+<td class="r t data">72,0</td>
+<td class="r t data">48,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C331 Interventions sur la cheville et l&#39;arrière-</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">1,3</td>
+<td class="r t data">64,0</td>
+<td class="r t data">36,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C332 Interventions sur la cheville et l&#39;arrière-</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,7</td>
+<td class="r t data">44,0</td>
+<td class="r t data">57,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C391 Interventions sur l&#39;avant-bras, niveau 1</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">2</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">14,0</td>
+<td class="r t data">49,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C39J Interventions sur l&#39;avant-bras, en ambulato</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">40,0</td>
+<td class="r t data">52,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C44J Autres interventions sur la main, en ambula</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">54,0</td>
+<td class="r t data">46,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08C473 Prothèses de hanche pour traumatismes récen</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">26</td>
+<td class="r t data">26,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">76,0</td>
+<td class="r t data">84,0</td>
+<td class="r t data">100,0</td>
+<td class="r t data">4,0</td>
+</tr>
+<tr>
+<td class="l t data">08C491 Interventions sur la hanche et le fémur pou</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">6,4</td>
+<td class="r t data">87,0</td>
+<td class="r t data">72,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">08C492 Interventions sur la hanche et le fémur pou</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">9,0</td>
+<td class="r t data">89,0</td>
+<td class="r t data">80,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">08C54J Interventions sur le genou pour des affecti</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">11,0</td>
+<td class="r t data">35,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">08C611 Interventions majeures pour infections osté</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">10</td>
+<td class="r t data">10,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">44,0</td>
+<td class="r t data">44,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,8</td>
+</tr>
+<tr>
+<td class="l t data">08C622 Autres interventions pour infections ostéoa</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">6,8</td>
+<td class="r t data">74,0</td>
+<td class="r t data">58,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">08C62J Autres interventions pour infections ostéoa</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">73,0</td>
+<td class="r t data">59,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08K051 Spondyloplasties, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,4</td>
+<td class="r t data">73,0</td>
+<td class="r t data">63,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08M043 Fractures de la hanche et du bassin, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">13,3</td>
+<td class="r t data">86,0</td>
+<td class="r t data">85,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,2</td>
+</tr>
+<tr>
+<td class="l t data">08M103 Maladies osseuses et arthropathies spécifiq</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">13</td>
+<td class="r t data">6,5</td>
+<td class="r t data">11,6</td>
+<td class="r t data">90,0</td>
+<td class="r t data">83,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,8</td>
+</tr>
+<tr>
+<td class="l t data">08M14T Affections du tissu conjonctif, très courte</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">77,0</td>
+<td class="r t data">53,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08M192 Autres pathologies de l&#39;appareil musculosqu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">8,6</td>
+<td class="r t data">82,0</td>
+<td class="r t data">76,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,8</td>
+</tr>
+<tr>
+<td class="l t data">08M193 Autres pathologies de l&#39;appareil musculosqu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">13,7</td>
+<td class="r t data">94,0</td>
+<td class="r t data">83,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,6</td>
+</tr>
+<tr>
+<td class="l t data">08M244 Tumeurs primitives malignes des os, du cart</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">23,8</td>
+<td class="r t data">79,0</td>
+<td class="r t data">67,2</td>
+<td class="r t data">100,0</td>
+<td class="r t data">25,7</td>
+</tr>
+<tr>
+<td class="l t data">08M261 Fractures du rachis, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">2,0</td>
+<td class="r t data">33,0</td>
+<td class="r t data">56,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">08M272 Sciatiques et autres radiculopathies, nivea</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">6,9</td>
+<td class="r t data">69,0</td>
+<td class="r t data">57,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">08M283 Autres rachialgies, niveau 3</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">23</td>
+<td class="r t data">7,7</td>
+<td class="r t data">10,6</td>
+<td class="r t data">64,3</td>
+<td class="r t data">79,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">08M291 Autres pathologies rachidiennes relevant d&#39;</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">11</td>
+<td class="r t data">5,5</td>
+<td class="r t data">3,3</td>
+<td class="r t data">36,5</td>
+<td class="r t data">52,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">08M292 Autres pathologies rachidiennes relevant d&#39;</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">5,9</td>
+<td class="r t data">45,0</td>
+<td class="r t data">63,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">08M312 Ostéomyélites aigües (y compris vertébrales</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">8,5</td>
+<td class="r t data">3,0</td>
+<td class="r t data">50,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,2</td>
+</tr>
+<tr>
+<td class="l t data">08M35Z Explorations et surveillance de l&#39;appareil</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">61,0</td>
+<td class="r t data">50,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">08M36Z Symptômes et autres recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,4</td>
+<td class="r t data">71,0</td>
+<td class="r t data">57,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">08M371 Fractures du bras et de l&#39;avant-bras, âge s</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,0</td>
+<td class="r t data">65,0</td>
+<td class="r t data">70,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,7</td>
+</tr>
+<tr>
+<td class="l t data">08M372 Fractures du bras et de l&#39;avant-bras, âge s</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">7,7</td>
+<td class="r t data">90,0</td>
+<td class="r t data">79,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,4</td>
+</tr>
+<tr>
+<td class="l t data">09C142 Certains curages lymphonodaux pour des affe</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">15</td>
+<td class="r t data">15,0</td>
+<td class="r t data">5,9</td>
+<td class="r t data">81,0</td>
+<td class="r t data">68,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C191 Interventions majeures pour tumeur maligne</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">67,0</td>
+<td class="r t data">61,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C201 Autres interventions pour tumeur maligne du</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">3</td>
+<td class="r t data">1,5</td>
+<td class="r t data">1,7</td>
+<td class="r t data">73,5</td>
+<td class="r t data">64,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C20J Autres interventions pour tumeur maligne du</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">59,0</td>
+<td class="r t data">59,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C221 Autres interventions hors tumeur maligne du</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">1,5</td>
+<td class="r t data">26,0</td>
+<td class="r t data">50,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C22J Autres interventions hors tumeur maligne du</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">53,0</td>
+<td class="r t data">46,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C24J Interventions intermédiaires pour tumeur ma</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">67,0</td>
+<td class="r t data">76,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C251 Autres interventions pour tumeur maligne de</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,5</td>
+<td class="r t data">55,0</td>
+<td class="r t data">75,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C26J Interventions pour tumeurs bénignes, naevus</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,0</td>
+<td class="r t data">44,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C281 Interventions majeures d&#39;exérèse ou de gref</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,2</td>
+<td class="r t data">57,0</td>
+<td class="r t data">44,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">09C291 Interventions intermédiaires d&#39;exérèse ou d</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">2,2</td>
+<td class="r t data">75,0</td>
+<td class="r t data">42,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">09C29J Interventions intermédiaires d&#39;exérèse ou d</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">50,0</td>
+<td class="r t data">40,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09C34J Autres interventions de la CMD09, en ambula</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">28,0</td>
+<td class="r t data">37,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09K02J Affections de la peau, des tissus sous-cuta</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">37,5</td>
+<td class="r t data">32,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09M02T Traumatismes de la peau et des tissus sous-</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">17,0</td>
+<td class="r t data">8,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09M031 Traumatismes de la peau et des tissus sous-</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,1</td>
+<td class="r t data">34,0</td>
+<td class="r t data">62,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">09M052 Lésions, infections et inflammations de la</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">12</td>
+<td class="r t data">4,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">55,0</td>
+<td class="r t data">60,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,9</td>
+</tr>
+<tr>
+<td class="l t data">09M05T Lésions, infections et inflammations de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">54,0</td>
+<td class="r t data">58,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,0</td>
+</tr>
+<tr>
+<td class="l t data">09M07T Autres affections dermatologiques, très cou</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">20,0</td>
+<td class="r t data">45,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09M082 Affections dermatologiques sévères, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">6,4</td>
+<td class="r t data">59,0</td>
+<td class="r t data">52,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">09M14T Symptômes et autres recours aux soins conce</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">23,0</td>
+<td class="r t data">37,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">09Z02A Chirurgie esthétique, sans complication sig</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">52,0</td>
+<td class="r t data">44,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10C021 Interventions sur l&#39;hypophyse, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">4,8</td>
+<td class="r t data">80,0</td>
+<td class="r t data">52,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">10C022 Interventions sur l&#39;hypophyse, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">6,3</td>
+<td class="r t data">25,0</td>
+<td class="r t data">54,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10C101 Autres interventions pour obésité, niveau 1</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">9</td>
+<td class="r t data">4,5</td>
+<td class="r t data">2,5</td>
+<td class="r t data">31,5</td>
+<td class="r t data">43,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10C131 Interventions digestives autres que les gas</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2,6</td>
+<td class="r t data">52,0</td>
+<td class="r t data">40,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10C133 Interventions digestives autres que les gas</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">8,5</td>
+<td class="r t data">31,0</td>
+<td class="r t data">45,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M021 Diabète, âge supérieur à 35 ans, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">4,0</td>
+<td class="r t data">49,0</td>
+<td class="r t data">58,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">10M022 Diabète, âge supérieur à 35 ans, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">5,8</td>
+<td class="r t data">48,0</td>
+<td class="r t data">61,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">10M031 Diabète, âge inférieur à 36 ans, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">4,6</td>
+<td class="r t data">26,0</td>
+<td class="r t data">18,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M03T Diabète, âge inférieur à 36 ans, très court</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3,0</td>
+<td class="r t data">19,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M072 Autres troubles endocriniens, niveau 2</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">15</td>
+<td class="r t data">7,5</td>
+<td class="r t data">5,6</td>
+<td class="r t data">68,5</td>
+<td class="r t data">53,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">10M08T Acidocétose et coma diabétique, très courte</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">55,0</td>
+<td class="r t data">40,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,4</td>
+</tr>
+<tr>
+<td class="l t data">10M13T Explorations et surveillance pour affection</td>
+<td class="r t data">10</td>
+<td class="r t data">2,0</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">39,2</td>
+<td class="r t data">44,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M14T Symptômes et autres recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">13,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">10M16T Troubles métaboliques, âge supérieur à 17 a</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">48,0</td>
+<td class="r t data">67,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,9</td>
+</tr>
+<tr>
+<td class="l t data">10M171 Troubles nutritionnels divers, âge inférieu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">3,5</td>
+<td class="r t data">0,7</td>
+<td class="r t data">2,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">10M183 Troubles nutritionnels divers, âge supérieu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">13,3</td>
+<td class="r t data">60,0</td>
+<td class="r t data">75,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,1</td>
+</tr>
+<tr>
+<td class="l t data">10M184 Troubles nutritionnels divers, âge supérieu</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">17</td>
+<td class="r t data">17,0</td>
+<td class="r t data">19,9</td>
+<td class="r t data">66,0</td>
+<td class="r t data">67,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">11,8</td>
+</tr>
+<tr>
+<td class="l t data">11C093 Créations et réfections de fistules artério</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">26</td>
+<td class="r t data">26,0</td>
+<td class="r t data">18,3</td>
+<td class="r t data">76,0</td>
+<td class="r t data">66,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,1</td>
+</tr>
+<tr>
+<td class="l t data">11C111 Interventions par voie transurétrale ou tra</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">1,6</td>
+<td class="r t data">44,0</td>
+<td class="r t data">56,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">11C12J Injections de toxine botulique dans l&#39;appar</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">35,0</td>
+<td class="r t data">55,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">11C131 Interventions par voie transurétrale ou tra</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">3</td>
+<td class="r t data">1,5</td>
+<td class="r t data">1,9</td>
+<td class="r t data">67,5</td>
+<td class="r t data">67,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">11K07Z Séjours de la CMD 11 comprenant la mise en</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+<td class="r t data">56,0</td>
+<td class="r t data">66,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,8</td>
+</tr>
+<tr>
+<td class="l t data">11M02T Lithiases urinaires, très courte durée</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+<td class="r t data">76,0</td>
+<td class="r t data">48,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">11M03T Infections des reins et des voies urinaires</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,0</td>
+<td class="r t data">4,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">11M043 Infections des reins et des voies urinaires</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">9</td>
+<td class="r t data">9,0</td>
+<td class="r t data">9,4</td>
+<td class="r t data">70,0</td>
+<td class="r t data">77,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,9</td>
+</tr>
+<tr>
+<td class="l t data">11M044 Infections des reins et des voies urinaires</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">13,9</td>
+<td class="r t data">80,0</td>
+<td class="r t data">84,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">6,8</td>
+</tr>
+<tr>
+<td class="l t data">11M063 Insuffisance rénale, sans dialyse, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">92,0</td>
+<td class="r t data">76,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">10,4</td>
+</tr>
+<tr>
+<td class="l t data">11M121 Signes et symptômes concernant les reins et</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,2</td>
+<td class="r t data">69,0</td>
+<td class="r t data">73,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">11M161 Autres affections des reins et des voies ur</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">75,0</td>
+<td class="r t data">61,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">11M162 Autres affections des reins et des voies ur</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">6,3</td>
+<td class="r t data">21,0</td>
+<td class="r t data">65,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,7</td>
+</tr>
+<tr>
+<td class="l t data">11M163 Autres affections des reins et des voies ur</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">11,6</td>
+<td class="r t data">71,0</td>
+<td class="r t data">71,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,2</td>
+</tr>
+<tr>
+<td class="l t data">11M171 Surveillances de greffes de rein, niveau 1</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">61,0</td>
+<td class="r t data">50,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">11M19Z Autres symptômes et recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,4</td>
+<td class="r t data">68,0</td>
+<td class="r t data">67,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">12C041 Prostatectomies transurétrales, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">76,0</td>
+<td class="r t data">70,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">12C13J Stérilisation et vasoplastie, en ambulatoir</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">40,0</td>
+<td class="r t data">40,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">12K06J Séjours comprenant une biopsie prostatique,</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">75,0</td>
+<td class="r t data">69,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">12M063 Prostatites aigües et orchites, niveau 3</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">30</td>
+<td class="r t data">30,0</td>
+<td class="r t data">9,2</td>
+<td class="r t data">78,0</td>
+<td class="r t data">76,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,0</td>
+</tr>
+<tr>
+<td class="l t data">13C031 Hystérectomies, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,0</td>
+<td class="r t data">45,0</td>
+<td class="r t data">51,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13C071 Interventions sur le système utéroannexiel</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,8</td>
+<td class="r t data">57,0</td>
+<td class="r t data">41,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13C10J Ligatures tubaires par laparoscopie ou coel</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">40,0</td>
+<td class="r t data">37,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13C12J Dilatations et curetages, conisations pour</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">47,5</td>
+<td class="r t data">43,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13C16J Prélèvements d&#39;ovocytes, en ambulatoire</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">32,3</td>
+<td class="r t data">34,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13C19J Interventions pour stérilité ou motifs de s</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">36,0</td>
+<td class="r t data">38,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13K02Z Endoscopies génito-urinaires thérapeutiques</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+<td class="r t data">54,0</td>
+<td class="r t data">50,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">13M041 Autres affections de l&#39;appareil génital fém</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,3</td>
+<td class="r t data">22,0</td>
+<td class="r t data">42,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">13M04T Autres affections de l&#39;appareil génital fém</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,4</td>
+<td class="r t data">32,0</td>
+<td class="r t data">34,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">14C05J Avortements avec aspiration ou curetage ou</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">25,7</td>
+<td class="r t data">32,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14C08A Césariennes pour grossesse unique, sans com</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">25</td>
+<td class="r t data">6,3</td>
+<td class="r t data">5,0</td>
+<td class="r t data">26,5</td>
+<td class="r t data">31,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14C08B Césariennes pour grossesse unique, avec aut</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">7,5</td>
+<td class="r t data">26,0</td>
+<td class="r t data">31,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14M03A Affections de l&#39;ante partum sans interventi</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">5</td>
+<td class="r t data">2,5</td>
+<td class="r t data">2,1</td>
+<td class="r t data">30,0</td>
+<td class="r t data">29,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14M03B Affections de l&#39;ante partum sans interventi</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">5,1</td>
+<td class="r t data">26,0</td>
+<td class="r t data">30,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z08Z Interruptions volontaires de grossesse : sé</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">27,0</td>
+<td class="r t data">28,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z13A Accouchements uniques par voie basse chez u</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">4,3</td>
+<td class="r t data">21,0</td>
+<td class="r t data">28,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z13C Accouchements uniques par voie basse chez u</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">8,1</td>
+<td class="r t data">30,0</td>
+<td class="r t data">28,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z14A Accouchements uniques par voie basse chez u</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">17</td>
+<td class="r t data">4,3</td>
+<td class="r t data">3,5</td>
+<td class="r t data">32,3</td>
+<td class="r t data">31,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">14Z16Z Faux travail et menaces d&#39;accouchements pré</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">6</td>
+<td class="r t data">2,0</td>
+<td class="r t data">3,9</td>
+<td class="r t data">31,7</td>
+<td class="r t data">29,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">16M102 Troubles sévères de la lignée érythrocytair</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">12</td>
+<td class="r t data">6,0</td>
+<td class="r t data">7,5</td>
+<td class="r t data">59,5</td>
+<td class="r t data">50,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,1</td>
+</tr>
+<tr>
+<td class="l t data">16M112 Autres troubles de la lignée érythrocytaire</td>
+<td class="r t data">3</td>
+<td class="r t data">0,6</td>
+<td class="r t data">20</td>
+<td class="r t data">6,7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">80,0</td>
+<td class="r t data">76,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,1</td>
+</tr>
+<tr>
+<td class="l t data">16M113 Autres troubles de la lignée érythrocytaire</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">11,4</td>
+<td class="r t data">81,0</td>
+<td class="r t data">80,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">3,4</td>
+</tr>
+<tr>
+<td class="l t data">16M11T Autres troubles de la lignée érythrocytaire</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+<td class="r t data">74,0</td>
+<td class="r t data">67,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,6</td>
+</tr>
+<tr>
+<td class="l t data">16M15T Symptômes et autres recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">43,0</td>
+<td class="r t data">49,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">17K091 Irradiations internes, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,3</td>
+<td class="r t data">65,0</td>
+<td class="r t data">60,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">17M051 Chimiothérapie pour leucémie aigüe, niveau</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">3,4</td>
+<td class="r t data">12,0</td>
+<td class="r t data">36,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">17M06T Chimiothérapie pour autre tumeur, très cour</td>
+<td class="r t data">8</td>
+<td class="r t data">1,6</td>
+<td class="r t data">9</td>
+<td class="r t data">1,1</td>
+<td class="r t data">1,4</td>
+<td class="r t data">65,6</td>
+<td class="r t data">62,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">17M094 Leucémies aigües, âge supérieur à 17 ans, n</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">54</td>
+<td class="r t data">27,0</td>
+<td class="r t data">31,9</td>
+<td class="r t data">41,5</td>
+<td class="r t data">59,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">17,2</td>
+</tr>
+<tr>
+<td class="l t data">17M14Z Explorations et surveillance pour affection</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">42,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">18M021 Maladies virales et fièvres d&#39;étiologie ind</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,2</td>
+<td class="r t data">0,5</td>
+<td class="r t data">2,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">18M032 Maladies virales, âge supérieur à 17 ans, n</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">4,9</td>
+<td class="r t data">92,0</td>
+<td class="r t data">60,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">18M042 Fièvres d&#39;étiologie indéterminée, âge supér</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">4</td>
+<td class="r t data">4,0</td>
+<td class="r t data">5,7</td>
+<td class="r t data">51,0</td>
+<td class="r t data">65,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,1</td>
+</tr>
+<tr>
+<td class="l t data">18M072 Sepsis, âge supérieur à 17 ans, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">7</td>
+<td class="r t data">7,0</td>
+<td class="r t data">8,1</td>
+<td class="r t data">62,0</td>
+<td class="r t data">70,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">10,4</td>
+</tr>
+<tr>
+<td class="l t data">18M111 Autres maladies infectieuses ou parasitaire</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,6</td>
+<td class="r t data">4,0</td>
+<td class="r t data">16,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+</tr>
+<tr>
+<td class="l t data">19M02T Troubles aigus de l&#39;adaptation et du foncti</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+<td class="r t data">46,0</td>
+<td class="r t data">44,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">19M062 Troubles mentaux d&#39;origine organique et ret</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">3</td>
+<td class="r t data">3,0</td>
+<td class="r t data">10,3</td>
+<td class="r t data">81,0</td>
+<td class="r t data">87,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,2</td>
+</tr>
+<tr>
+<td class="l t data">19M063 Troubles mentaux d&#39;origine organique et ret</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">15,4</td>
+<td class="r t data">94,0</td>
+<td class="r t data">87,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,5</td>
+</tr>
+<tr>
+<td class="l t data">19M06T Troubles mentaux d&#39;origine organique et ret</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,2</td>
+<td class="r t data">88,0</td>
+<td class="r t data">86,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">19M072 Troubles mentaux d&#39;origine organique et ret</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">11</td>
+<td class="r t data">11,0</td>
+<td class="r t data">9,9</td>
+<td class="r t data">68,0</td>
+<td class="r t data">69,3</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,4</td>
+</tr>
+<tr>
+<td class="l t data">19M22T Symptômes et autres recours aux soins de la</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">14,0</td>
+<td class="r t data">38,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,1</td>
+</tr>
+<tr>
+<td class="l t data">20Z051 Ethylisme aigu, niveau 1</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">34,0</td>
+<td class="r t data">45,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">21C041 Interventions sur la main ou le poignet à l</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">1,7</td>
+<td class="r t data">66,0</td>
+<td class="r t data">44,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">21M02T Effets toxiques des médicaments et substanc</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">16,0</td>
+<td class="r t data">12,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">21M10T Effets toxiques des médicaments et substanc</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,7</td>
+<td class="r t data">46,2</td>
+<td class="r t data">41,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">21M111 Effets toxiques des autres substances chimi</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">2</td>
+<td class="r t data">2,0</td>
+<td class="r t data">2,5</td>
+<td class="r t data">58,0</td>
+<td class="r t data">33,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,7</td>
+</tr>
+<tr>
+<td class="l t data">21M11T Effets toxiques des autres substances chimi</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">1</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,6</td>
+<td class="r t data">21,0</td>
+<td class="r t data">33,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,5</td>
+</tr>
+<tr>
+<td class="l t data">21M15T Rejets de greffe, très courte durée</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">53,0</td>
+<td class="r t data">46,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23K02Z Explorations nocturnes et apparentées : séj</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">2</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0,9</td>
+<td class="r t data">41,0</td>
+<td class="r t data">50,7</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23K03J Motifs de recours de la CMD 23 sans acte op</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">48,0</td>
+<td class="r t data">51,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23M06T Autres facteurs influant sur l&#39;état de sant</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0,2</td>
+<td class="r t data">50,4</td>
+<td class="r t data">51,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">23M08J Autres motifs de recours chez un patient di</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">63,0</td>
+<td class="r t data">50,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23M102 Soins de contrôle chirurgicaux, niveau 2</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">6</td>
+<td class="r t data">6,0</td>
+<td class="r t data">6,5</td>
+<td class="r t data">60,0</td>
+<td class="r t data">69,2</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,3</td>
+</tr>
+<tr>
+<td class="l t data">23M14Z Traitements prophylactiques</td>
+<td class="r t data">5</td>
+<td class="r t data">1,0</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">58,4</td>
+<td class="r t data">58,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23M20T Autres symptômes et motifs de recours aux s</td>
+<td class="r t data">14</td>
+<td class="r t data">2,9</td>
+<td class="r t data">1</td>
+<td class="r t data">0,1</td>
+<td class="r t data">0,3</td>
+<td class="r t data">49,0</td>
+<td class="r t data">55,5</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,4</td>
+</tr>
+<tr>
+<td class="l t data">23M20Z Autres symptômes et motifs de recours aux s</td>
+<td class="r t data">8</td>
+<td class="r t data">1,6</td>
+<td class="r t data">34</td>
+<td class="r t data">4,3</td>
+<td class="r t data">4,6</td>
+<td class="r t data">59,4</td>
+<td class="r t data">58,8</td>
+<td class="r t data">0,0</td>
+<td class="r t data">1,6</td>
+</tr>
+<tr>
+<td class="l t data">23M21T Désensibilisations et tests allergologiques</td>
+<td class="r t data">4</td>
+<td class="r t data">0,8</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">65,8</td>
+<td class="r t data">36,6</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">23Z03Z Interventions de confort et autres interven</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+<td class="r t data">47,0</td>
+<td class="r t data">33,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">25M02B Maladies dues au VIH, avec une seule compli</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">5</td>
+<td class="r t data">5,0</td>
+<td class="r t data">12,0</td>
+<td class="r t data">66,0</td>
+<td class="r t data">51,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">0,0</td>
+</tr>
+<tr>
+<td class="l t data">26C022 Interventions pour traumatismes multiples g</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">13</td>
+<td class="r t data">13,0</td>
+<td class="r t data">13,0</td>
+<td class="r t data">46,0</td>
+<td class="r t data">45,9</td>
+<td class="r t data">0,0</td>
+<td class="r t data">2,3</td>
+</tr>
+<tr>
+<td class="l t data">26C023 Interventions pour traumatismes multiples g</td>
+<td class="r t data">1</td>
+<td class="r t data">0,2</td>
+<td class="r t data">8</td>
+<td class="r t data">8,0</td>
+<td class="r t data">19,5</td>
+<td class="r t data">16,0</td>
+<td class="r t data">50,1</td>
+<td class="r t data">0,0</td>
+<td class="r t data">4,9</td>
+</tr>
+<tr>
+<td class="l t data">26M021 Traumatismes multiples graves, niveau 1</td>
+<td class="r t data">2</td>
+<td class="r t data">0,4</td>
+<td class="r t data">13</td>
+<td class="r t data">6,5</td>
+<td class="r t data">3,0</td>
+<td class="r t data">28,5</td>
+<td class="r t data">43,4</td>
+<td class="r t data">0,0</td>
+<td class="r t data">14,0</td>
+</tr>
+<tr>
+<th class="l m header" scope="col">periode</th>
+<th class="r m header" scope="col">491</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">1 719</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+</tr>
+<tr>
+<th class="l m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">521</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">1 848</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+<th class="r m header" scope="col">&nbsp;</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c systemfooter">&#39;</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>
