@@ -419,7 +419,7 @@ epmsi_mco_sv(rsa_valo)
 ### Récapitulation activité - valorisation
 
 ```{r echo = TRUE, eval = FALSE}
-epmsi_mco_sv(rsa_valo)
+epmsi_mco_rav(rsa_valo)
 ```
 
 <a class = "fixed" target="_blank" href="epmsi/290000017.2023.0.ano-rsa-fichcomp.t1v1rav.html">Lien vers le tableau [1.V.1.RAV]</a>
