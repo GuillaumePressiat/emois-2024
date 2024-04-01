@@ -113,6 +113,29 @@ dtttable <- function(x, n = 12) DT::datatable(x, extensions = 'Buttons', options
 
 ####  Enregistrer le script
 
+---
+
+## Installation des bibliothèques
+
+
+Si vous ne l'avez pas déjà fait en amont :
+
+```{r echo = TRUE, eval = FALSE}
+###### Dépendances
+install.packages('tidyverse')
+install.packages('sjlabelled')
+install.packages('sqldf')
+
+###### pmeasyr / nomensland
+install.packages('pmeasyr', repos = 'https://guillaumepressiat.r-universe.dev')
+install.packages('nomensland', repos = 'https://guillaumepressiat.r-universe.dev')
+
+# ou 
+# install.packages('remotes')
+#remotes::install_github('guillaumepressiat/pmeasyr')
+#remotes::install_github('guillaumepressiat/nomensland')
+```
+
 
 ---
 class: inverse, center, middle

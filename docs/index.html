@@ -122,6 +122,30 @@ class: center, middle, inverse, title-slide
 
 ####  Enregistrer le script
 
+---
+
+## Installation des bibliothèques
+
+
+Si vous ne l'avez pas déjà fait en amont :
+
+
+```r
+###### Dépendances
+install.packages('tidyverse')
+install.packages('sjlabelled')
+install.packages('sqldf')
+
+###### pmeasyr / nomensland
+install.packages('pmeasyr', repos = 'https://guillaumepressiat.r-universe.dev')
+install.packages('nomensland', repos = 'https://guillaumepressiat.r-universe.dev')
+
+# ou 
+# install.packages('remotes')
+#remotes::install_github('guillaumepressiat/pmeasyr')
+#remotes::install_github('guillaumepressiat/nomensland')
+```
+
 
 ---
 class: inverse, center, middle
