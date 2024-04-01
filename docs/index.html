@@ -106,7 +106,7 @@ noyau_pmeasyr(
   finess = '290000017',
   annee  = 2023L,
   mois   = 12L,
-  path   = '~/Documents/data/mco',
+  path   = 'data',
   tolower_names = TRUE
 ) -&gt; p
 
@@ -343,6 +343,8 @@ epmsi_mco_sv(rsa_valo)
 
 Voir programme annexe `exemple_ipa.R`
 
+et le lien ici : [https://toudim.netlify.app/](https://toudim.netlify.app/)
+
 ---
 
 ## Tableau [1.V.2.VMED] 
@@ -407,7 +409,7 @@ rsa$actes %&gt;%
 rgp_ghm &lt;- get_table('ghm_ghm_regroupement')
 rsa$rsa %&gt;% 
   count(ghm, anseqta) %&gt;% 
-  left_join(rgp_ghm, by = c('ghm' = 'anseqta'))
+  left_join(rgp_ghm, by = c('ghm', 'anseqta'))
 ```
 
 ---
