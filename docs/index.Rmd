@@ -57,7 +57,7 @@ dtttable <- function(x, n = 12) DT::datatable(x, extensions = 'Buttons', options
 class: inverse, center, middle
 
 
-# Reproduire des tableaux *e*-PMSI avec R
+# Reproduire des tableaux<br>*e*-PMSI avec R
 
 ---
 
