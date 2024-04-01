@@ -553,16 +553,10 @@ requete(rsa, requete_complexe, vars = c('ghm', 'agean'))
 ---
 class: inverse, center, middle
 
-<br>
-<br>
-
-<img style="float: left" src="assets/Gaston_Lagaffe.png" height="400px">
-
-<br>
-<br>
-<br>
-<br>
-<br>
 
 # `M'en... %>% fin`
+
+<img style="float: top-left" src="assets/Gaston_Lagaffe.png" height="250">
+
+
 
