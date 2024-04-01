@@ -1,7 +1,7 @@
 ---
 title: "Atelier R pour le PMSI"
 subtitle: "EMOIS 2024 -- Lille"
-author: "Guillaume Pressiat"
+author: "Guillaume Pressiat - CHU de Brest"
 date: "05/04/2024"
 output:
   xaringan::moon_reader:
